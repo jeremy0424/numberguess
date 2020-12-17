@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>109306077</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var value;
+		var guessNumber;
+		value = Math.floor((Math.random()*10+1));
+		guessNumber = window.prompt("Please guess a number from 1 to 10!")
+		while(guessNumber!=value){
+			guessNumber = window.prompt("Wrong! Please enter a number from 1 to 10 again!")
+		}
+		document.writeln(myFunction(guessNumber,value))
+		function myFunction(guessNumber,value){
+			if(guessNumber == value){
+				return "Correct!";
+			}
+		}
+	</script>
+</body>
+</html>
